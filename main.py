@@ -1,7 +1,6 @@
 from sqlalchemy.orm import Session
 from fastapi import FastAPI, Depends, HTTPException
 from typing import Annotated
-
 from routers.auth import hash_password
 from database import Base, get_db, engine
 from models import Reservation, User
